@@ -50,14 +50,21 @@ header
         background-repeat: no-repeat
         z-index: -1
     .myinformation
+        display: none
         +myinformation(8vh,16.5vw)
         p
-           @extend %myinformation
+            @extend %myinformation
     .myinformation2
+        display: none
         +myinformation(8vh,3vw)
         p
             @extend %myinformation
-    img
+    .school
+        +myinformation(1vh,95vw)
+        width: 50px
+    .subject
+        +myinformation(3vh,87vw)
+    .face
         width: 250px
         height: 250px
         border: 1px
