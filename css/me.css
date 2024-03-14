@@ -1,0 +1,395 @@
+header nav ul, header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce2 .two, .introduce2 .one, .introduce .two, .introduce .one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer, .introduce .one, header nav {
+  background: #B19D9D;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+header nav .school {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+}
+header nav .school img {
+  width: 50px;
+}
+header nav h3 {
+  font-size: 25px;
+}
+header nav ul {
+  position: absolute;
+  top: 2.3vh;
+  right: 10vw;
+  z-index: 1;
+}
+header nav ul img {
+  width: 40px;
+}
+header nav ul li {
+  height: 40px;
+}
+
+.photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 700px;
+  color: #fff;
+}
+.photo::after {
+  content: " ";
+  background-image: url("/photo/introduce.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.photo .face {
+  margin-left: 8%;
+  margin-top: 5%;
+  margin-right: 25%;
+}
+.photo .face img {
+  width: 250px;
+  height: 250px;
+  border: 1px;
+  border-radius: 50%;
+}
+.photo h2 {
+  font-size: 30px;
+  margin-bottom: 5vh;
+}
+
+.introduce {
+  display: flex;
+  height: 400px;
+  margin-top: 5px;
+}
+.introduce .one {
+  width: 50%;
+}
+.introduce .one h3 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.introduce .one p {
+  width: 400px;
+}
+.introduce .two {
+  width: 50%;
+  background: #f1e4e4;
+}
+.introduce .two h3 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.introduce .two ul {
+  flex-direction: column;
+}
+.introduce .two ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.introduce .two ul li img {
+  width: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.introduce .two ul li .per1 {
+  width: 60%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+.introduce .two ul li .per2 {
+  width: 50%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+.introduce .two ul li .per3 {
+  width: 30%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+.introduce .two ul li .per4 {
+  width: 60%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+
+.introduce2 .one h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.introduce2 .one p {
+  width: 500px;
+}
+.introduce2 .two h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.introduce2 .two p {
+  width: 500px;
+}
+.introduce2 .three {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.introduce2 .three .AI {
+  display: flex;
+  align-items: center;
+}
+.introduce2 .three .AI .AI2 img {
+  width: 400px;
+}
+.introduce2 .three .AI .AI3 img {
+  width: 805px;
+}
+.introduce2 .three .paragraph {
+  margin-left: 17%;
+}
+.introduce2 .three .paragraph h3 {
+  font-size: 30px;
+}
+.introduce2 .three .paragraph h4 {
+  margin-top: 10%;
+  margin-bottom: 100%;
+}
+.introduce2 .three .paragraph a {
+  border: 1px solid #B19D9D;
+  padding: 15px 50px;
+  background: #B19D9D;
+  color: #fff;
+  margin-left: -15%;
+}
+.introduce2 .three .paragraph a:hover {
+  background: #fff;
+  color: #B19D9D;
+  transition: 0.5s;
+}
+
+.four {
+  text-align: center;
+  margin: 50px 0 50px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+footer ul {
+  margin-left: 10px;
+  width: 40%;
+}
+footer p {
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header nav {
+    width: 100%;
+  }
+  header nav .school img {
+    font-size: 20px;
+    width: 10%;
+  }
+  header nav .school p {
+    font-size: 10px;
+  }
+  main {
+    width: 100%;
+  }
+  main .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .photo::after {
+    background-size: auto;
+  }
+  main .photo h2, main .photo p {
+    font-size: 100%;
+    margin: 10% 0 0 0;
+  }
+  main .photo img {
+    margin: 0 0 0 15%;
+  }
+  main .introduce {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: 0 0 10%;
+  }
+  main .introduce .one, main .introduce .two {
+    width: 100%;
+    height: 100%;
+  }
+  main .introduce .one p, main .introduce .two ul {
+    width: 80%;
+  }
+  main .introduce2 .one, main .introduce2 .two {
+    height: 300px;
+  }
+  main .introduce2 .one p, main .introduce2 .two p {
+    width: 300px;
+  }
+  main .introduce2 .three {
+    margin: 0;
+  }
+  main .introduce2 .three .AI {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .introduce2 .three .AI .AI2 img {
+    width: 100%;
+  }
+  main .introduce2 .three .AI .AI3 img {
+    width: 100%;
+  }
+  main .introduce2 .three .AI .paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  main .introduce2 .three .AI .paragraph h3, main .introduce2 .three .AI .paragraph h4, main .introduce2 .three .AI .paragraph a {
+    margin: 15% 0;
+  }
+  main footer {
+    display: flex;
+    flex-direction: column;
+  }
+  main footer ul, main footer p {
+    width: 100%;
+    text-align: center;
+    margin: 1% 0 0 0;
+  }
+  main footer ul li, main footer p li {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  header nav {
+    width: 100%;
+  }
+  header nav .school {
+    width: 100%;
+  }
+  header nav .school img {
+    font-size: 20px;
+    width: 5%;
+  }
+  header nav .school p {
+    font-size: 15px;
+  }
+  main {
+    width: 100%;
+  }
+  main .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .photo::after {
+    background-size: cover;
+  }
+  main .photo h2, main .photo p {
+    font-size: 100%;
+    margin: 10% 0 0 0;
+  }
+  main .photo .face {
+    width: 100%;
+  }
+  main .photo .face img {
+    margin: 22% 0 0 17%;
+  }
+  main .photo .pa {
+    width: 100%;
+  }
+  main .introduce {
+    display: flex;
+    height: 300px;
+    margin: 0 0 10%;
+  }
+  main .introduce .one, main .introduce .two {
+    width: 100%;
+    height: 100%;
+  }
+  main .introduce .one p, main .introduce .two ul {
+    width: 80%;
+    text-align: center;
+  }
+  main .introduce2 .one, main .introduce2 .two {
+    height: 400px;
+  }
+  main .introduce2 .one p, main .introduce2 .two p {
+    width: 400px;
+  }
+  main .introduce2 .three {
+    margin: 0;
+    width: 100%;
+  }
+  main .introduce2 .three .AI {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .introduce2 .three .AI .paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  main .introduce2 .three .AI .paragraph h3, main .introduce2 .three .AI .paragraph h4, main .introduce2 .three .AI .paragraph a {
+    margin: 10% 0 20%;
+  }
+  main footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  main footer ul, main footer p {
+    width: 100%;
+    text-align: center;
+    margin: 1% 0 1% 0;
+  }
+  main footer ul li, main footer p li {
+    display: flex;
+  }
+}/*# sourceMappingURL=me.css.map */
