@@ -1,0 +1,408 @@
+header nav ul, header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce2 .six, .introduce2 .two, .introduce2 .one, .introduce .two, .introduce .one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer, .introduce .one, header nav {
+  background: #B19D9D;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+header nav .school {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+}
+header nav .school img {
+  width: 50px;
+}
+header nav h3 {
+  font-size: 25px;
+}
+header nav ul {
+  position: absolute;
+  top: 2.3vh;
+  right: 10vw;
+  z-index: 1;
+}
+header nav ul img {
+  width: 40px;
+}
+header nav ul li {
+  height: 40px;
+  border: 1px;
+  border-radius: 50%;
+  margin-left: 80px;
+  color: #fff;
+}
+header nav ul li:hover {
+  background: #fff;
+  color: #B19D9D;
+  transition: 0.5s;
+}
+
+.photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 700px;
+  color: #fff;
+}
+.photo::after {
+  content: " ";
+  background-image: url("/photo/introduce.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 70px;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.photo .face {
+  margin-left: 8%;
+  margin-top: 5%;
+  margin-right: 25%;
+}
+.photo .face img {
+  width: 250px;
+  height: 250px;
+  border: 1px;
+  border-radius: 50%;
+}
+.photo h2 {
+  font-size: 30px;
+  margin-bottom: 5vh;
+}
+
+.introduce {
+  display: flex;
+  height: 400px;
+  margin-top: 5px;
+}
+.introduce .one {
+  width: 50%;
+}
+.introduce .one h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.introduce .one p {
+  width: 400px;
+}
+.introduce .two {
+  width: 50%;
+  background: #f1e4e4;
+}
+.introduce .two h3 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.introduce .two ul {
+  flex-direction: column;
+}
+.introduce .two ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.introduce .two ul li img {
+  width: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.introduce .two ul li .per1 {
+  width: 60%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+.introduce .two ul li .per2 {
+  width: 50%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+.introduce .two ul li .per3 {
+  width: 30%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+.introduce .two ul li .per4 {
+  width: 60%;
+  background: #fff;
+  border: 2px solid #6d6666;
+  border-radius: 10%;
+}
+
+.introduce2 .one h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.introduce2 .one p {
+  width: 500px;
+}
+.introduce2 .two h3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.introduce2 .two p {
+  width: 500px;
+}
+.introduce2 .three {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.introduce2 .three .AI {
+  display: flex;
+  align-items: center;
+}
+.introduce2 .three .AI .AI2 img {
+  width: 400px;
+}
+.introduce2 .three .AI .AI3 img {
+  width: 805px;
+}
+.introduce2 .three .paragraph {
+  margin-left: 17%;
+}
+.introduce2 .three .paragraph h3 {
+  font-size: 30px;
+}
+.introduce2 .three .paragraph h4 {
+  margin-top: 10%;
+  margin-bottom: 100%;
+}
+.introduce2 .three .paragraph a {
+  border: 1px solid #B19D9D;
+  padding: 15px 50px;
+  background: #B19D9D;
+  color: #fff;
+  margin-left: -15%;
+}
+.introduce2 .three .paragraph a:hover {
+  background: #fff;
+  color: #B19D9D;
+  transition: 0.5s;
+}
+.introduce2 .four {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+.introduce2 .four .headline {
+  width: 20%;
+}
+.introduce2 .four .photos img {
+  width: 400px;
+}
+.introduce2 .five {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+.introduce2 .five .photo2 {
+  display: flex;
+  flex-direction: column;
+}
+.introduce2 .five .photo2 img {
+  width: 400px;
+}
+.introduce2 .five .photo3 img {
+  width: 345px;
+}
+.introduce2 .five .headline {
+  margin-left: 20%;
+}
+.introduce2 .six {
+  margin: 50px 0;
+}
+.introduce2 .six h3 {
+  margin: 0 0 20px;
+}
+.introduce2 .six ul {
+  margin: 20px 0 0;
+  width: 300px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.footer ul {
+  margin-left: 10px;
+  width: 40%;
+}
+.footer ul li {
+  display: flex;
+}
+.footer p {
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  header nav ul {
+    position: absolute;
+    top: 1.2vh;
+    right: 10vw;
+    z-index: 1;
+  }
+  .photo::after {
+    background-size: cover;
+  }
+  .photo .face {
+    margin-left: 13%;
+    margin-top: 13%;
+  }
+  .photo .school {
+    position: absolute;
+    top: 0.5vh;
+    right: 92vw;
+    z-index: 1;
+  }
+  .photo .subject {
+    position: absolute;
+    top: 1.7vh;
+    right: 80vw;
+    z-index: 1;
+  }
+  .introduce .one p, .two ul {
+    width: 300px;
+  }
+  .introduce2 .three .paragraph a {
+    writing-mode: vertical-lr;
+  }
+  .introduce2 .three .AI .AI2 img, .AI3 img, .paragraph a, .five .photo2 img, .five .photo3, .five .photo3 img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav .school img, nav .school p, nav .phone, nav .mail {
+    display: none;
+  }
+  .photo {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo::after {
+    background-size: auto;
+  }
+  .photo .face img {
+    margin-left: 10%;
+    margin-top: 50%;
+    margin-bottom: 20%;
+    width: 100%;
+  }
+  .photo .pa h2 {
+    font-size: 20px;
+  }
+  .introduce {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+  .introduce .one {
+    width: 100%;
+    height: 400px;
+  }
+  .introduce .one p {
+    width: 300px;
+  }
+  .introduce .two {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  .introduce .two ul {
+    width: 300px;
+  }
+  .introduce2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .introduce2 .one {
+    height: 300px;
+  }
+  .introduce2 .one p {
+    width: 300px;
+  }
+  .introduce2 .two {
+    margin-top: 50px;
+    height: 250px;
+  }
+  .introduce2 .two p {
+    width: 300px;
+  }
+  .introduce2 .three {
+    margin-left: 0;
+  }
+  .introduce2 .three .AI {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .introduce2 .three .AI .AI1 .AI2 img {
+    max-width: 100%;
+  }
+  .introduce2 .three .AI .AI1 .AI3 img {
+    max-width: 100%;
+  }
+  .introduce2 .three .paragraph {
+    margin-bottom: 70px;
+  }
+  .introduce2 .three .paragraph h4 {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .introduce2 .four {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .introduce2 .four .headline {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .introduce2 .five {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
+  .introduce2 .five .headline {
+    margin-bottom: 35px;
+    margin-left: 0;
+  }
+  .introduce2 .footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=me.css.map */
