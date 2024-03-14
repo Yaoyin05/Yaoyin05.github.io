@@ -1,0 +1,303 @@
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+
+header
+    nav
+        position: fixed
+        width: 100%
+        @extend %colors
+        @extend %often
+        height: 70px
+        z-index: 1
+        .school
+            display: flex
+            align-items: center
+            position: absolute
+            top: 1vh
+            left: 1vw
+            img
+                width: 50px
+        h3
+            font-size: 25px
+        ul
+            +myinformation(2.3vh,10vw)
+            @extend %often
+            img
+                width: 40px
+            li 
+                height: 40px
+.photo
+    position: relative
+    display: flex
+    align-items: center
+    height: 700px
+    color: $hot-color
+    &::after
+        content: " "
+        background-image: url('/photo/introduce.png')
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 10%
+        left: 0
+        background-size: contain 
+        background-repeat: no-repeat
+        z-index: -1
+    .face 
+        margin-left: 8%
+        margin-top: 5%
+        margin-right: 25% 
+        img
+            width: 250px
+            height: 250px
+            border: 1px
+            border-radius: 50%
+    h2
+        font-size: 30px
+        margin-bottom: 5vh
+.introduce
+    display: flex
+    height: 400px
+    margin-top: 5px
+    .one
+        width: 50%
+        @extend %often2
+        @extend %colors
+        h3
+            margin-top: 60px
+            margin-bottom: 60px
+        p
+            width: 400px
+    .two
+        width: 50% 
+        background: #f1e4e4
+        @extend %often2
+        h3
+            text-align: center
+            margin-top: 60px
+            margin-bottom: 60px 
+        ul 
+            flex-direction: column
+            li
+                display: flex
+                align-items: center
+                margin-bottom: 15px
+                img
+                    width: 50px
+                    display: inline-block
+                    margin-right: 20px
+                .per1
+                    +percent(60%)
+                .per2
+                    +percent(50%)
+                .per3
+                    +percent(30%)
+                .per4
+                    +percent(60%)
+.introduce2
+    .one
+        @extend %often2
+        h3
+            margin-top: 5%
+            margin-bottom: 5%
+        p
+            width: 500px
+    .two
+        @extend %often2
+        h3
+            margin-top: 5%
+            margin-bottom: 5%
+        p
+            width: 500px
+            
+            
+    .three
+        margin-left: 10%
+        margin-top: 10%
+        .AI
+            display: flex
+            align-items: center
+            .AI2
+                img
+                    width: 400px
+            .AI3
+                img
+                    width: 805px 
+        .paragraph
+            margin-left: 17%
+            h3
+                font-size: 30px
+            h4
+                margin-top: 10%
+                margin-bottom: 100%
+            a
+                border: 1px solid $bg-color
+                padding: 15px 50px
+                background: $bg-color
+                color: $hot-color
+                margin-left: -15%
+                &:hover
+                    background: $hot-color
+                    color: $bg-color
+                    transition: 0.5s
+.four
+    text-align: center
+    margin: 50px 0 50px
+footer
+    display: flex
+    align-items: center
+    height: 100px
+    @extend %colors
+    ul
+        margin-left: 10px
+        width: 40%
+        li
+            
+    p
+        margin-left: 20px
+    
+@media only screen and (min-width:320px) and (max-width:767px)
+    header
+        nav
+            width: 100%
+            .school
+                img
+                    font-size: 20px
+                    width: 10% 
+                p
+                    font-size: 10px
+    main
+        width: 100%
+        .photo
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            &::after
+                background-size: auto
+            h2,p
+                font-size: 100%
+                margin: 10% 0 0 0
+            img
+                margin: 0 0 0 15%
+        .introduce
+            display: flex
+            flex-direction: column
+            height: 600px
+            margin: 0 0 10%
+            .one,.two
+                width: 100%
+                height: 100%
+            .one p, .two ul
+                width: 80%
+        .introduce2
+            .one,.two
+                height: 300px
+            .one p,.two p
+                width: 300px
+            .three
+                margin: 0
+                .AI 
+                    display: flex
+                    flex-direction: column-reverse
+                    
+                    .AI2 img
+                        width: 100%
+                    .AI3 img
+                        width: 100%
+                    .paragraph 
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin: 0
+                        h3,h4,a
+                            margin: 15% 0
+        footer
+            display: flex
+            flex-direction: column
+            ul,p
+                width: 100%
+                text-align: center
+                margin: 1% 0 0 0
+                li
+                    display: flex
+                    
+@media screen and ( min-width: 768px ) and ( max-width: 1280px)
+    header
+        nav
+            width: 100%
+            .school 
+                width: 100%
+                img
+                    font-size: 20px
+                    width: 5% 
+                p
+                    font-size: 15px
+    main
+        width: 100%
+        .photo
+            display: flex
+            align-items: center
+            justify-content: center
+            &::after
+                background-size: cover
+            h2,p
+                font-size: 100%
+                margin: 10% 0 0 0
+            .face
+                width: 100%
+                img
+                    margin: 22% 0 0 17%
+            .pa
+                width: 100%
+        .introduce
+            display: flex
+            height: 300px
+            margin: 0 0 10%
+            .one,.two
+                width: 100%
+                height: 100%
+            .one p, .two ul
+                width: 80%
+                text-align: center
+            
+        .introduce2
+            .one,.two
+                height: 400px
+            .one p,.two p
+                width: 400px
+            .three
+                margin: 0
+                width: 100%
+                .AI 
+                    display: flex
+                    flex-direction: column-reverse
+                    .paragraph 
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin: 0
+                        h3,h4,a
+                            margin: 10% 0 20%
+                        
+                        
+        footer
+            width: 100%
+            display: flex
+            flex-direction: column
+            height: 200px
+            ul,p
+                width: 100%
+                text-align: center
+                margin: 1% 0 1% 0
+                li
+                    display: flex
+            
+                    
+
+
+            
+           
